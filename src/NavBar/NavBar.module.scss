@@ -1,0 +1,46 @@
+.wrapNAV {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-top: 43px;
+    align-items: center;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 17px;
+        color: #858585;
+        line-height: 21px;
+        .logo {
+            height: 48px;
+        }
+        span {
+            margin-left: 12px;
+        }
+    }
+    .onlineServ {
+        color: #51bc40;
+        .circle1 {
+            background: rgba(81, 188, 64, 0.15);
+            clip-path: circle(50%);
+            height: 24px;
+            width: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .circle2 {
+                background: #51bc40;
+                clip-path: circle(50%);
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+    .MyOffice {
+        padding: 24px 49px 21px 49px;
+        background-color: #51bc40;
+        color: white;
+        border-radius: 10px;
+    }
+}

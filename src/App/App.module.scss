@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../Font/GilroyBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+* {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: "Gilroy-Medium";
+}
