@@ -14,11 +14,15 @@
 
 .wrapNAV .active {
   color: #51bc40;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapNAV .active img {
   -webkit-filter: invert(56%) sepia(75%) saturate(374%) hue-rotate(65deg) brightness(95%) contrast(100%);
           filter: invert(56%) sepia(75%) saturate(374%) hue-rotate(65deg) brightness(95%) contrast(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapNAV a {

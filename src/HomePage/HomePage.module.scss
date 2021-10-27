@@ -1,0 +1,31 @@
+.WrapHomePage {
+    margin-top: 116px;
+    h2 {
+        text-align: center;
+        line-height: 65.61px;
+        color: #3e3e3e;
+        font-size: 55px;
+        max-width: 920px;
+        font-weight: 600;
+    }
+    button {
+        background: #51bc40;
+        margin-top: 50px;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 20px 46px 20px 46px;
+        border-radius: 10px;
+        cursor: pointer;
+        img {
+            width: 31px;
+            margin-right: 16px;
+        }
+        span {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

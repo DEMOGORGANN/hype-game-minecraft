@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 
 import NavBar from "./../NavBar/NavBar"
+import HomePage from "../HomePage/HomePage";
 
 import styles from './App.module.css'
 
@@ -12,7 +13,7 @@ function App() {
     <BrowserRouter>
       <div className={styles.App}>
         <NavBar />
-        хуй тебе в рот
+        <HomePage />
 
       </div>
     </BrowserRouter>

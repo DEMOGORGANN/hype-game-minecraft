@@ -6,8 +6,10 @@
     align-items: center;
     .active {
         color: #51bc40;
-        img{
+        transition: 0.3s;
+        img {
             filter: invert(56%) sepia(75%) saturate(374%) hue-rotate(65deg) brightness(95%) contrast(100%);
+            transition: 0.3s;
         }
     }
     a {
