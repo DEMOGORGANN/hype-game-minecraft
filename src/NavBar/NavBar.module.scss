@@ -4,6 +4,12 @@
     justify-content: space-evenly;
     margin-top: 43px;
     align-items: center;
+    .active {
+        color: #51bc40;
+        img{
+            filter: invert(56%) sepia(75%) saturate(374%) hue-rotate(65deg) brightness(95%) contrast(100%);
+        }
+    }
     a {
         display: flex;
         align-items: center;
@@ -19,6 +25,7 @@
             margin-left: 12px;
         }
     }
+
     .onlineServ {
         color: #51bc40;
         .circle1 {

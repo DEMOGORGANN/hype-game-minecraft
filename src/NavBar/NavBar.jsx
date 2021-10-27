@@ -1,4 +1,8 @@
 import React from "react";
+import {
+    NavLink
+} from "react-router-dom";
+
 
 import logo from './../IMG/HypeGameLOGO.png'
 import HomeImg from "./../IMG/Home.png"
@@ -14,45 +18,45 @@ function wrapNavBar() {
     return (
         <div className={styles.wrapNAV}>
 
-            <a href='#'>
+            <NavLink exact to='/logo'>
                 <img className={styles.logo} src={logo} alt="" />
-            </a>
+            </NavLink>
 
-            <a href='#'>
+            <NavLink activeClassName={styles.active} exact to='/home'>
                 <img src={HomeImg} alt="" />
                 <span>ГЛАВНАЯ</span>
-            </a>
+            </NavLink>
 
-            <a href='#'>
+            <NavLink activeClassName={styles.active} exact to='/servers'>
                 <img src={Server} alt="" />
                 <span>СЕРВЕРА</span>
-            </a>
+            </NavLink>
 
-            <a href='#'>
+            <NavLink activeClassName={styles.active} exact to='/ban'>
                 <img src={BanList} alt="" />
                 <span>БАН ЛИСТ</span>
-            </a>
+            </NavLink>
 
-            <a href='#'>
+            <NavLink activeClassName={styles.active} exact to='/ts'>
                 <img src={Support} alt="" />
                 <span>ТЕХ.ПОДДЕРЖКА</span>
-            </a>
+            </NavLink>
 
-            <a href='#'>
+            <NavLink activeClassName={styles.active} exact to='/maskGro'>
                 <img src={MaskGroup} alt="" />
                 <span>МАГАЗИН</span>
-            </a>
+            </NavLink>
 
-            <a href='#' className={styles.onlineServ}>
+            <NavLink exact to='/online' className={styles.onlineServ}>
                 <div className={styles.circle1}>
                     <div className={styles.circle2}></div>
                 </div>
                 <span>4302</span>
-            </a>
+            </NavLink>
 
-            <a href='#' className={styles.MyOffice}>
+            <NavLink exact to='#' className={styles.MyOffice}>
                 ЛИЧНЫЙ КАБИНЕТ
-            </a>
+            </NavLink>
         </div>
     );
 }
