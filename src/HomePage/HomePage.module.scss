@@ -28,4 +28,87 @@
             font-weight: 700;
         }
     }
+    .bigImg {
+        margin-top: 100px;
+        max-height: auto;
+        img {
+            pointer-events: none;
+            user-select: none;
+        }
+        .wrapKoob {
+            margin-top: -230px;
+            .koob1 {
+                position: relative;
+                top: -50px;
+                left: 100px;
+            }
+            .koob2 {
+                position: relative;
+                top: -540px;
+                left: 200px;
+                z-index: -1;
+            }
+            .koob3 {
+                position: relative;
+                top: -500px;
+                left: 750px;
+            }
+        }
+    }
+    .bigImg:hover {
+        .wrapKoob {
+            .koob1 {
+                transform: rotate(-10deg);
+                transition: 1s;
+            }
+            .koob2 {
+                transform: rotate(10deg);
+                transition: 1s;
+            }
+            .koob3 {
+                transform: rotate(20deg);
+                transition: 0.5s;
+                top: -490px;
+            }
+        }
+    }
+    .bigImg:not(hover) {
+        .wrapKoob {
+            .koob1 {
+                transform: rotate(10deg);
+                transition: 1s;
+            }
+            .koob2 {
+                transform: rotate(-10deg);
+                transition: 1s;
+            }
+            .koob3 {
+                transform: rotate(0deg);
+                transition: 0.5s;
+                top: -500px;
+            }
+        }
+    }
+    .titleMe {
+        display: flex;
+        justify-content: center;
+        color: #3e3e3e;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .wrapInfoMe1 {
+        display: flex;
+        align-items: center;
+        .intoServers {
+            h2 {
+                text-align: left;
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 60px;
+                color: #3e3e3e;
+                max-width: 600px;
+            }
+        }
+    }
 }

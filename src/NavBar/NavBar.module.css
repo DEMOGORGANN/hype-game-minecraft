@@ -41,6 +41,7 @@
 
 .wrapNAV a .logo {
   height: 48px;
+  pointer-events: none;
 }
 
 .wrapNAV a span {

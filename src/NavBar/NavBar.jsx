@@ -14,7 +14,7 @@ import MaskGroup from './../IMG/MaskGroup.png'
 
 import styles from "./NavBar.module.css"
 
-function wrapNavBar() {
+function wrapNavBar({ kolUser }) {
     return (
         <div className={styles.wrapNAV}>
 
@@ -51,7 +51,7 @@ function wrapNavBar() {
                 <div className={styles.circle1}>
                     <div className={styles.circle2}></div>
                 </div>
-                <span>4302</span>
+                <span>{kolUser}</span>
             </NavLink>
 
             <NavLink exact to='#' className={styles.MyOffice}>
