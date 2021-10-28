@@ -2,7 +2,7 @@
   margin-top: 116px;
 }
 
-.WrapHomePage h2 {
+.WrapHomePage .TITLETILE {
   text-align: center;
   line-height: 65.61px;
   color: #3e3e3e;
@@ -141,11 +141,104 @@
 }
 
 .WrapHomePage .wrapInfoMe1 .intoServers h2 {
-  text-align: left;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 60px;
   color: #3e3e3e;
-  max-width: 600px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  max-width: 750px;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 65px;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 52px 50px;
+  position: relative;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .green {
+  background: rgba(81, 188, 64, 0.15);
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .green .circle2 {
+  background: #51bc40;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blue {
+  background: rgba(97, 134, 244, 0.15);
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blue .circle2 {
+  background: #6186f4;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .circle1 {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .circle1 .circle2 {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 8px;
+  height: 8px;
+  margin: 0;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull h3 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blueCol {
+  color: #6186f4;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .greenCol {
+  color: #51bc40;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull span {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #858585;
+}
+
+.WrapHomePage .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ:last-child {
+  left: 50px;
+}
+
+.WrapHomePage .wrapInfoMe1 img {
+  position: relative;
 }
 /*# sourceMappingURL=HomePage.module.css.map */
