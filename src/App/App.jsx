@@ -7,6 +7,7 @@ import NavBar from "./../NavBar/NavBar"
 import HomePage from "../HomePage/HomePage";
 
 import styles from './App.module.css'
+import Footer from "../Footer/Footer";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
       <div className={styles.App}>
         <NavBar kolUser={kolUser} />
         <HomePage kolUser={kolUser} />
-
+        <Footer />
       </div>
     </BrowserRouter>
   );
