@@ -1,0 +1,127 @@
+.ForMe .titleMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3e3e3e;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.ForMe .wrapInfoMe1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ForMe .wrapInfoMe1 .intoServers h2 {
+  color: #3e3e3e;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  max-width: 750px;
+  margin: 0;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 65px;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 52px 55px 53px 55px;
+  position: relative;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .green {
+  background: rgba(81, 188, 64, 0.15);
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .green .circle2 {
+  background: #51bc40;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blue {
+  background: rgba(97, 134, 244, 0.15);
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blue .circle2 {
+  background: #6186f4;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .circle1 {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .circle1 .circle2 {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 8px;
+  height: 8px;
+  margin: 0;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull h3 {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin: 0;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .blueCol {
+  color: #6186f4;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ .cirleFull .greenCol {
+  color: #51bc40;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ span {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #858585;
+  max-width: 187px;
+}
+
+.ForMe .wrapInfoMe1 .intoServers .wrapUserInfoServ .UserInfoServ:last-child {
+  left: 50px;
+}
+
+.ForMe .wrapInfoMe1 img {
+  position: relative;
+}
+/*# sourceMappingURL=ForMe.module.css.map */

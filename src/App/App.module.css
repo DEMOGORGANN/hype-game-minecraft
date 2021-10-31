@@ -5,8 +5,11 @@
 }
 
 * {
+  font-family: "Gilroy-Medium";
+}
+
+.App {
   max-width: 1400px;
   margin: 0 auto;
-  font-family: "Gilroy-Medium";
 }
 /*# sourceMappingURL=App.module.css.map */

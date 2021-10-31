@@ -1,0 +1,98 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    animation-name: appear;
+    animation-duration: 300ms;
+    .modalDialog {
+        width: 100%;
+        border-radius: 15px;
+        max-width: 700px;
+        background: white;
+        position: relative;
+        margin: 0 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slide-in;
+        animation-duration: 0.5s;
+        .modalHeader {
+            display: flex;
+            justify-content: center;
+            margin-top: 57px;
+            margin-bottom: 23px;
+            .modalTitle {
+                margin: 0;
+                font-size: 25px;
+                line-height: 31px;
+                text-transform: uppercase;
+                color: #3e3e3e;
+            }
+        }
+        .modalBody {
+            // overflow: auto;
+            margin: 23px 56px 20px 56px;
+            input[type="text"] {
+                width: 100%;
+                padding: 27px;
+                box-sizing: border-box;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 20px;
+                color: #858585;
+                background: #f7f7f7;
+                border-radius: 10px;
+                border: none;
+            }
+        }
+        .zxWrapBut {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 76px;
+            button {
+                max-width: 575px;
+                margin: 0;
+                padding: 24px 168px;
+                background: #51bc40;
+                border: none;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,139 @@
+.wrapd {
+  margin: 0 auto;
+}
+
+.wrapd .TITLETILE {
+  text-align: center;
+  line-height: 65.61px;
+  color: #3e3e3e;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.wrapd .but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapd .but button {
+  background: #51bc40;
+  margin-top: 50px;
+  border: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 46px 20px 46px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.wrapd .but button img {
+  width: 31px;
+  margin-right: 16px;
+}
+
+.wrapd .but button span {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wrapd .bigImg {
+  margin-top: 100px;
+  max-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapd .bigImg img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapd .bigImg .wrapKoob {
+  margin-top: -230px;
+}
+
+.wrapd .bigImg .wrapKoob .koob1 {
+  position: relative;
+  top: -50px;
+  left: 100px;
+}
+
+.wrapd .bigImg .wrapKoob .koob2 {
+  position: relative;
+  top: -540px;
+  left: 200px;
+  z-index: -1;
+}
+
+.wrapd .bigImg .wrapKoob .koob3 {
+  position: relative;
+  top: -500px;
+  left: 750px;
+}
+
+.wrapd .bigImg:hover .wrapKoob .koob1 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wrapd .bigImg:hover .wrapKoob .koob2 {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wrapd .bigImg:hover .wrapKoob .koob3 {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: -490px;
+}
+
+.wrapd .bigImg:not(hover) .wrapKoob .koob1 {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wrapd .bigImg:not(hover) .wrapKoob .koob2 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wrapd .bigImg:not(hover) .wrapKoob .koob3 {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: -500px;
+}
+/*# sourceMappingURL=BigImg.module.css.map */

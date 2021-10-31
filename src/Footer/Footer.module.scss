@@ -17,16 +17,20 @@
             margin: 0;
         }
     }
-    .LastBlogFoot {
-        margin-top: 17px;
-        max-width: 270px;
+    .xzWrap {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        .LastBlogFoot {
+            margin-top: 17px;
+            max-width: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        img{
-            margin: 0;
-            opacity: 0.3;
+            img {
+                margin: 0;
+                opacity: 0.3;
+            }
         }
     }
 }

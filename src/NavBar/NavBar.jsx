@@ -14,7 +14,7 @@ import MaskGroup from './../IMG/MaskGroup.png'
 
 import styles from "./NavBar.module.css"
 
-function wrapNavBar({ kolUser }) {
+function wrapNavBar({ kolUser, setVisible }) {
     return (
         <div className={styles.wrapNAV}>
 
@@ -54,10 +54,10 @@ function wrapNavBar({ kolUser }) {
                 <span>{kolUser}</span>
             </NavLink>
 
-            <NavLink exact to='#' className={styles.MyOffice}>
+            <NavLink exact to='#' className={styles.MyOffice} onClick={() => setVisible(true)}>
                 ЛИЧНЫЙ КАБИНЕТ
             </NavLink>
-        </div>
+        </div >
     );
 }
 

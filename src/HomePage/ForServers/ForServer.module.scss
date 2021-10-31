@@ -1,0 +1,52 @@
+.wrapServ {
+    display: flex;
+    align-items: center;
+    margin-top: 219px;
+
+    img {
+        max-width: 632px;
+    }
+    .wrapSevrHost {
+        position: relative;
+        right: 50px;
+        top: -15px;
+        h2 {
+            font-weight: 600;
+            font-size: 49px;
+            line-height: 60px;
+            color: #3e3e3e;
+            margin-bottom: 120px;
+        }
+        .equipment {
+            display: flex;
+            justify-content:flex-end;
+
+            .wrapBlock {
+                display: flex;
+                flex-direction: column;
+                background: #f5f5f5;
+                padding: 34px 24px 39px 39px;
+                min-width: 145px;
+                border-radius: 15px;
+                img {
+                    width: 50px;
+                    margin: 0;
+                }
+                span {
+                    margin: 32px 0 0 0;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #858585;
+                    font-weight: 600;
+                }
+            }
+            .wrapBlock:nth-child(1){
+                margin-right: 31px;
+            }
+            .wrapBlock:nth-child(2){
+                margin-right: 31px;
+            }
+        }
+    }
+}

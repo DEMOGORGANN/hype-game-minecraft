@@ -1,0 +1,100 @@
+.wrapd {
+    margin: 0 auto;
+    .TITLETILE {
+        text-align: center;
+        line-height: 65.61px;
+        color: #3e3e3e;
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .but {
+        display: flex;
+        justify-content: center;
+        button {
+            background: #51bc40;
+            margin-top: 50px;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 20px 46px 20px 46px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 0;
+
+            img {
+                width: 31px;
+                margin-right: 16px;
+            }
+            span {
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+    .bigImg {
+        margin-top: 100px;
+        max-height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img {
+            pointer-events: none;
+            user-select: none;
+        }
+        .wrapKoob {
+            margin-top: -230px;
+            .koob1 {
+                position: relative;
+                top: -50px;
+                left: 100px;
+            }
+            .koob2 {
+                position: relative;
+                top: -540px;
+                left: 200px;
+                z-index: -1;
+            }
+            .koob3 {
+                position: relative;
+                top: -500px;
+                left: 750px;
+            }
+        }
+    }
+    .bigImg:hover {
+        .wrapKoob {
+            .koob1 {
+                transform: rotate(-10deg);
+                transition: 1s;
+            }
+            .koob2 {
+                transform: rotate(10deg);
+                transition: 1s;
+            }
+            .koob3 {
+                transform: rotate(20deg);
+                transition: 0.5s;
+                top: -490px;
+            }
+        }
+    }
+    .bigImg:not(hover) {
+        .wrapKoob {
+            .koob1 {
+                transform: rotate(10deg);
+                transition: 1s;
+            }
+            .koob2 {
+                transform: rotate(-10deg);
+                transition: 1s;
+            }
+            .koob3 {
+                transform: rotate(0deg);
+                transition: 0.5s;
+                top: -500px;
+            }
+        }
+    }
+}

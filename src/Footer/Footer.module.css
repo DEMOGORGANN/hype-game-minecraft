@@ -28,7 +28,16 @@
   margin: 0;
 }
 
-.WrapFooter .LastBlogFoot {
+.WrapFooter .xzWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.WrapFooter .xzWrap .LastBlogFoot {
   margin-top: 17px;
   max-width: 270px;
   display: -webkit-box;
@@ -42,7 +51,7 @@
           justify-content: space-between;
 }
 
-.WrapFooter .LastBlogFoot img {
+.WrapFooter .xzWrap .LastBlogFoot img {
   margin: 0;
   opacity: 0.3;
 }
