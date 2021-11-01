@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter
+  BrowserRouter,
+  Route
 } from "react-router-dom";
 
 import NavBar from "./../NavBar/NavBar"
 import HomePage from "../HomePage/HomePage";
 import Modal from "../ModalWindow/Modal";
+import Server from '../ServerPage/Server'
+
 
 import styles from './App.module.css'
 import Footer from "../Footer/Footer";
@@ -25,7 +28,18 @@ function App() {
       <div className={styles.App}  >
         <Modal visible={visible} setVisible={setVisible} />
         <NavBar kolUser={kolUser} setVisible={setVisible} />
-        <HomePage kolUser={kolUser} setVisible={setVisible} />
+
+        <Route exact path="/">
+          <HomePage kolUser={kolUser} setVisible={setVisible} />
+        </Route>
+        <Route exact path="/servers">
+          <Server />
+        </Route>
+
+
+
+
+
         <Footer />
 
 

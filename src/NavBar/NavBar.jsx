@@ -18,11 +18,11 @@ function wrapNavBar({ kolUser, setVisible }) {
     return (
         <div className={styles.wrapNAV}>
 
-            <NavLink exact to='/logo'>
+            <NavLink exact to='/'>
                 <img className={styles.logo} src={logo} alt="" />
             </NavLink>
 
-            <NavLink activeClassName={styles.active} exact to='/home'>
+            <NavLink activeClassName={styles.active} exact to='/'>
                 <img src={HomeImg} alt="" />
                 <span>ГЛАВНАЯ</span>
             </NavLink>

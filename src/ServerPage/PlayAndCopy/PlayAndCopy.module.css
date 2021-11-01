@@ -1,0 +1,39 @@
+.PlayAndCopy .rightInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.PlayAndCopy .rightInfo span {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: right;
+}
+
+.PlayAndCopy .rightInfo .playS {
+  text-align: right;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.PlayAndCopy .rightInfo .playS span {
+  margin-right: 12px;
+}
+
+.PlayAndCopy .rightInfo .playS1 {
+  text-align: right;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.PlayAndCopy .rightInfo .playS1 span {
+  margin-right: 12px;
+}
+/*# sourceMappingURL=PlayAndCopy.module.css.map */
