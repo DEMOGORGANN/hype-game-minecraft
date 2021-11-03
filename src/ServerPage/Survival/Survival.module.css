@@ -1,0 +1,129 @@
+.Survival {
+  background: url("../../IMG/SurvivalMinBGRD.png") no-repeat;
+  background-size: cover;
+  background-color: #d19f3e;
+  border-radius: 10px;
+  margin-top: 37px;
+  max-width: 685px;
+  width: 100%;
+}
+
+.Survival .wrapEl {
+  padding: 29px 59px 40px 59px;
+}
+
+.Survival .wrapEl .HeadElem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Survival .wrapEl .HeadElem .LeftHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Survival .wrapEl .HeadElem .LeftHead img {
+  margin-right: 21px;
+}
+
+.Survival .wrapEl .HeadElem .LeftHead .H1H2 h1 {
+  margin: 0 0 9px 0;
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.Survival .wrapEl .HeadElem .LeftHead .H1H2 h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+}
+
+.Survival .wrapEl .bottomElem {
+  margin-top: 15px;
+}
+
+.Survival .wrapEl .bottomElem progress {
+  display: block;
+  /* default: inline-block */
+  max-width: 1281px;
+  width: 100%;
+  height: 3px;
+  background: #d7a950;
+  border-radius: 140px;
+  margin-bottom: 20px;
+}
+
+.Survival .wrapEl .bottomElem progress::-moz-progress-bar {
+  border-radius: 12px;
+  background: #6e9fff;
+  box-shadow: inset 0 -2px 4px rgba(0, 0, 0, 0.4), 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.Survival .wrapEl .bottomElem progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+.Survival .wrapEl .bottomElem progress::-webkit-progress-value {
+  border-radius: 12px;
+  background: #fff;
+}
+
+.Survival .wrapEl .bottomElem .infoOnline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Survival .wrapEl .bottomElem .infoOnline .circle1 {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.Survival .wrapEl .bottomElem .infoOnline .circle1 .circle2 {
+  background: #ffffff;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 8px;
+  height: 8px;
+}
+
+.Survival .wrapEl .bottomElem .infoOnline span {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*# sourceMappingURL=Survival.module.css.map */

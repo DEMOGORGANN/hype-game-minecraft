@@ -97,51 +97,6 @@
   font-weight: 100;
 }
 
-.FTSTServ .wrapEl .HeadElem .rightInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo span {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: right;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS {
-  text-align: right;
-  margin-bottom: 7px;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS span {
-  margin-right: 12px;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS img {
-  cursor: pointer;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS1 {
-  text-align: right;
-  margin-bottom: 7px;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS1 span {
-  margin-right: 12px;
-}
-
-.FTSTServ .wrapEl .HeadElem .rightInfo .playS1 img {
-  cursor: pointer;
-}
-
 .FTSTServ .wrapEl .bottomElem {
   margin-top: 60px;
 }

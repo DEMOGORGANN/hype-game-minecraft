@@ -19,18 +19,27 @@
 
 .PlayAndCopy .rightInfo .playS {
   text-align: right;
-  margin-bottom: 7px;
-  cursor: pointer;
+  margin-bottom: 16px;
 }
 
 .PlayAndCopy .rightInfo .playS span {
   margin-right: 12px;
+  cursor: pointer;
+}
+
+.PlayAndCopy .rightInfo .playS img {
+  cursor: pointer;
 }
 
 .PlayAndCopy .rightInfo .playS1 {
   text-align: right;
-  margin-bottom: 7px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .PlayAndCopy .rightInfo .playS1 span {

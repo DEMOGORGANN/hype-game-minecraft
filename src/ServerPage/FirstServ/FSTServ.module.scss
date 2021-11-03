@@ -73,38 +73,6 @@
                     font-weight: 100;
                 }
             }
-            .rightInfo {
-                display: flex;
-                flex-direction: column;
-                span {
-                    font-size: 17px;
-                    font-weight: 700;
-                    line-height: 21px;
-                    text-transform: uppercase;
-                    color: #ffffff;
-                    text-align: right;
-                }
-                .playS {
-                    text-align: right;
-                    margin-bottom: 7px;
-                    span {
-                        margin-right: 12px;
-                    }
-                    img {
-                        cursor: pointer;
-                    }
-                }
-                .playS1 {
-                    text-align: right;
-                    margin-bottom: 7px;
-                    span {
-                        margin-right: 12px;
-                    }
-                    img {
-                        cursor: pointer;
-                    }
-                }
-            }
         }
         .bottomElem {
             margin-top: 60px;

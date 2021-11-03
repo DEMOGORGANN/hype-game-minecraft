@@ -9,7 +9,7 @@ import PlayAndCopy from "./../PlayAndCopy/PlayAndCopy";
 import quetionImg from './../../IMG/quetionImg.png'
 
 
-function FSTServ() {
+function FSTServ({ valy }) {
 
 
 
@@ -30,13 +30,13 @@ function FSTServ() {
                     <PlayAndCopy copy={"pc.hypegame.co"} />
                 </div>
                 <div className={styles.bottomElem}>
-                    <progress max="2500" value="2000"></progress>
+                    <progress max="2500" value={valy}></progress>
 
                     <div className={styles.infoOnline}>
                         <div className={styles.circle1}>
                             <div className={styles.circle2}></div>
                         </div>
-                        <span>1500/2500</span>
+                        <span>{valy}/2500</span>
                     </div>
                 </div>
             </div>
