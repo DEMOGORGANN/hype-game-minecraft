@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=BanList.module.css.map */
+.wrapBanList {
+  margin-top: 70px;
+}
+
+.wrapBanList .wrapHeadList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapBanList .wrapHeadList .Elements span {
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.wrapBanList .wrapHeadList .Elements h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #51bc40;
+}
+
+.wrapBanList .wrapHeadList .MyInput {
+  max-width: 400px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 42px 30px 33px;
+}
+
+.wrapBanList .wrapHeadList .MyInput input {
+  border: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #858585;
+  background-color: #f7f7f7;
+  margin-right: 100px;
+}
+
+.wrapBanList .wrapHeadList .MyInput input:active,
+.wrapBanList .wrapHeadList .MyInput :hover,
+.wrapBanList .wrapHeadList .MyInput :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.wrapBanList .wrapHeadList .MyInput button {
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapBanList .wrapHeadList .MyInput button img {
+  width: 20px;
+}
+/*# sourceMappingURL=BanList.module.css.map */

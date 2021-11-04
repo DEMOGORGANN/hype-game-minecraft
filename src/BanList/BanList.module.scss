@@ -1,0 +1,54 @@
+.wrapBanList {
+    margin-top: 70px;
+    .wrapHeadList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Elements {
+            span {
+                font-size: 17px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+            h3 {
+                margin: 0;
+                font-size: 17px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #51bc40;
+            }
+        }
+        .MyInput {
+            max-width: 400px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 27px 42px 30px 33px;
+            input {
+                border: none;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 20px;
+                color: #858585;
+                background-color: #f7f7f7;
+                margin-right: 100px;
+            }
+            input:active,
+            :hover,
+            :focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+            button {
+                background-color: #f7f7f7;
+                border: none;
+                cursor: pointer;
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
