@@ -32,7 +32,7 @@ function wrapNavBar({ kolUser, setVisible }) {
                 <span>СЕРВЕРА</span>
             </NavLink>
 
-            <NavLink activeClassName={styles.active} exact to='/ban'>
+            <NavLink activeClassName={styles.active} exact to='/banList'>
                 <img src={BanList} alt="" />
                 <span>БАН ЛИСТ</span>
             </NavLink>

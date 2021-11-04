@@ -1,0 +1,76 @@
+{
+    "banList": [
+        {
+            "banId": 1,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "alkoran",
+            "cause": "Гриферство",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 2,
+            "nameBan": "cheburan",
+            "nameServ": "play.minicraft-server.de",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 3,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "alkoran",
+            "cause": "Гриферство",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 4,
+            "nameBan": "cheburan",
+            "nameServ": "play.minicraft-server.de",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 5,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 6,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "alkoran",
+            "cause": "Гриферство",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 7,
+            "nameBan": "cheburan",
+            "nameServ": "play.minicraft-server.de",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 8,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        },
+        {
+            "banId": 9,
+            "nameBan": "cheburan",
+            "nameServ": "kmkz.ws",
+            "banFor": "cheburan",
+            "cause": "Оск. нации",
+            "dateBan": "14.12.2021 20:02"
+        }
+    ]
+}
