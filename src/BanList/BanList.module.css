@@ -68,4 +68,54 @@
 .wrapBanList .wrapHeadList .MyInput button img {
   width: 20px;
 }
+
+.wrapBanList .wrapInfoBanUser {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.wrapBanList .wrapInfoBanUser .infs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapBanList .wrapInfoBanUser .infs > span {
+  width: 176px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+}
+
+.wrapBanList .wrapInfoBanUser .wrapBanUser .UserInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 27px 0px 28px 0px;
+}
+
+.wrapBanList .wrapInfoBanUser .wrapBanUser .UserInfo span {
+  width: 176px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #858585;
+}
+
+.wrapBanList .wrapInfoBanUser .wrapBanUser .UserInfo:first-child {
+  margin-top: 58px;
+}
+
+.wrapBanList .wrapInfoBanUser .wrapBanUser .UserInfo:nth-child(even) {
+  background-color: #f5f5f5;
+}
 /*# sourceMappingURL=BanList.module.css.map */

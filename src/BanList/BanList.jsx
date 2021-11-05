@@ -14,6 +14,7 @@ function BanList() {
         lastUserBan = i.nameBan;
     })
 
+    const lastEightUsers = banList.slice(-8).reverse();
 
     useEffect(() => {
         fetch("http://localhost:3000/banList")
@@ -53,6 +54,32 @@ function BanList() {
                 <div className={styles.MyInput}>
                     <input type="text" placeholder="Поиск игрока" />
                     <button><img src={seachUserBut} alt="" /></button>
+                </div>
+            </div>
+            <div className={styles.wrapInfoBanUser}>
+                <div className={styles.infs}>
+                    <span>БАН ID</span>
+                    <span>имя игрока</span>
+                    <span>Название сервера</span>
+                    <span>забанил</span>
+                    <span>причина</span>
+                    <span>дата бана</span>
+                </div>
+                <div className={styles.wrapBanUser}>
+                    {
+                        lastEightUsers.map(item => {
+                            return (
+                                <div key={item.banId} className={styles.UserInfo}>
+                                    <span>{item.banId}</span>
+                                    <span>{item.nameBan}</span>
+                                    <span>{item.nameServ}</span>
+                                    <span>{item.banFor}</span>
+                                    <span>{item.cause}</span>
+                                    <span>{item.dateBan}</span>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
 
