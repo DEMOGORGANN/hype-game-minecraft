@@ -78,13 +78,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .wrapBanList .wrapInfoBanUser .infs > span {
-  width: 176px;
+  width: 136px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -95,14 +94,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 27px 0px 28px 0px;
 }
 
 .wrapBanList .wrapInfoBanUser .wrapBanUser .UserInfo span {
-  width: 176px;
+  width: 136px;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;

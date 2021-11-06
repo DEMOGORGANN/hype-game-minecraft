@@ -7,14 +7,27 @@ import seachUserBut from './../IMG/seachUser.png'
 
 function BanList() {
 
+
+
     const [banList, setBanLins] = useState([])
+    const [value, setValue] = useState("")
+    const [binder, setBinder] = useState([])
 
     let lastUserBan = "";
     banList.forEach(i => {
         lastUserBan = i.nameBan;
     })
 
-    const lastEightUsers = banList.slice(-8).reverse();
+    const lastEightUsers = binder.slice(-8).reverse();
+
+
+    useEffect(() => {
+        if (value === " " || value === "") {
+            setBinder(banList)
+        }
+    }, [value, banList])
+
+
 
     useEffect(() => {
         fetch("http://localhost:3000/banList")
@@ -22,10 +35,21 @@ function BanList() {
             .then(
                 (result) => {
                     setBanLins(result);
+                    setBinder(result)
+
                 }
             )
     }, [])
 
+    function onCheach() {
+        setBinder(seach(banList, value))
+        function seach(arr, find) {
+            return arr.filter(function (values) {
+                return values.nameBan.indexOf(find) !== -1;
+            });
+        }
+        console.log(value)
+    }
 
 
     return (
@@ -51,11 +75,17 @@ function BanList() {
                     <span>последний бан:</span>
                     <h3>{lastUserBan}</h3>
                 </div>
+
                 <div className={styles.MyInput}>
-                    <input type="text" placeholder="Поиск игрока" />
-                    <button><img src={seachUserBut} alt="" /></button>
+                    <input type="text" placeholder="Поиск игрока" onChange={(e) => setValue(e.target.value)} />
+                    <button><img src={seachUserBut} alt="" onClick={onCheach} /></button>
                 </div>
+
             </div>
+
+
+
+
             <div className={styles.wrapInfoBanUser}>
                 <div className={styles.infs}>
                     <span>БАН ID</span>

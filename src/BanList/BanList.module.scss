@@ -56,23 +56,26 @@
         text-align: center;
         .infs {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             > span {
-                width: 176px;
+                width: 136px;
                 font-size: 16px;
                 line-height: 20px;
                 text-transform: uppercase;
                 color: #3e3e3e;
             }
+            // span:last-child {
+            //     padding-right: 50px;
+            // }
         }
 
         .wrapBanUser {
             .UserInfo {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 padding: 27px 0px 28px 0px;
                 span {
-                    width: 176px;
+                    width: 136px;
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 19px;
@@ -80,6 +83,9 @@
                     text-transform: uppercase;
                     color: #858585;
                 }
+                // span:last-child {
+                //     padding-right: 50px;
+                // }
             }
             .UserInfo:first-child {
                 margin-top: 58px;
