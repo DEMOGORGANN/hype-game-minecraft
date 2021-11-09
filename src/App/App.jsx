@@ -9,6 +9,7 @@ import HomePage from "../HomePage/HomePage";
 import Modal from "../ModalWindow/Modal";
 import Server from '../ServerPage/Server'
 import BanList from '../BanList/BanList'
+import SupportTS from "../SupportTS/SupportTS";
 
 
 import styles from './App.module.css'
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route exact path="/banList">
           <BanList />
+        </Route>
+        <Route exact path="/ts">
+          <SupportTS />
         </Route>
 
 

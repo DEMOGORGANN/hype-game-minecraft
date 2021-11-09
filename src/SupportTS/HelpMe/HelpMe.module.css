@@ -1,0 +1,62 @@
+.HelpMe {
+  background: url("./../../IMG/supportsBgr.png");
+  background-color: white;
+  -webkit-box-shadow: 800px 0px 250px 0px white inset;
+          box-shadow: 800px 0px 250px 0px white inset;
+  border-radius: 10px;
+  margin-top: 37px;
+  margin-bottom: 20px;
+  padding: 2.6875rem 0 2.75rem 5.5rem;
+}
+
+.HelpMe h1 {
+  font-size: 25px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  text-align: left;
+}
+
+.HelpMe h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #858585;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #858585;
+  max-width: 625px;
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+
+.HelpMe button {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2f80ed;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 24px 31px 21px 31px;
+}
+
+.HelpMe button img {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=HelpMe.module.css.map */

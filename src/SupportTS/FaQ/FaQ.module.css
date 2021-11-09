@@ -1,0 +1,63 @@
+.question {
+  padding: 0 6rem 0 6rem;
+  margin-bottom: 15px;
+}
+
+.question header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.question header h4 {
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.question header img {
+  padding: 14px;
+  background: rgba(188, 64, 153, 0.25);
+  border-radius: 10px;
+}
+
+.question header:hover {
+  background-color: #f0f7f0f3;
+  border-radius: 15px;
+}
+
+.question hr {
+  background: #fdfdfd;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.question .wrapRegulation {
+  padding: 0 3rem 0 3rem;
+}
+
+.question .wrapRegulation .spans {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 176.5%;
+  text-transform: uppercase;
+  color: #818181;
+  font-weight: 400;
+}
+
+.question .wrapRegulation .spans :first-child {
+  color: #2c2c2c;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 176.5%;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=FaQ.module.css.map */
