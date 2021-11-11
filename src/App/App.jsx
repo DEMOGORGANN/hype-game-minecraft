@@ -10,6 +10,7 @@ import Modal from "../ModalWindow/Modal";
 import Server from '../ServerPage/Server'
 import BanList from '../BanList/BanList'
 import SupportTS from "../SupportTS/SupportTS";
+import ShopDonate from "../ShopDonate/ShopDonate";
 
 
 import styles from './App.module.css'
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route exact path="/ts">
           <SupportTS />
+        </Route>
+        <Route exact path="/donate">
+          <ShopDonate />
         </Route>
 
 

@@ -37,17 +37,17 @@ function wrapNavBar({ kolUser, setVisible }) {
                 <span>БАН ЛИСТ</span>
             </NavLink>
 
-            <NavLink activeClassName={styles.active} exact to='/ts'>
+            <NavLink activeClassName={styles.active}    exact to='/ts'>
                 <img src={Support} alt="" />
                 <span>ТЕХ.ПОДДЕРЖКА</span>
             </NavLink>
 
-            <NavLink activeClassName={styles.active} exact to='/maskGro'>
+            <NavLink activeClassName={styles.active} exact to='/donate'>
                 <img src={MaskGroup} alt="" />
                 <span>МАГАЗИН</span>
             </NavLink>
 
-            <NavLink exact to='/online' className={styles.onlineServ}>
+            <NavLink exact to='/servers' className={styles.onlineServ}>
                 <div className={styles.circle1}>
                     <div className={styles.circle2}></div>
                 </div>
