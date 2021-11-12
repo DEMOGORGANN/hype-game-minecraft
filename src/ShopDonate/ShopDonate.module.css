@@ -1,5 +1,6 @@
 .wrapShop {
   margin-top: 40px;
+  max-width: 1400px;
 }
 
 .wrapShop .wrapBut {
@@ -42,19 +43,27 @@
   transition: 0.5s;
 }
 
-.wrapShop .wrapDonateBlock {
-  background: url("./../IMG/Voin1.png") no-repeat;
-  background-size: cover;
-  -webkit-box-shadow: 100px 0px 250px 0px #61ecf4 inset;
-          box-shadow: 100px 0px 250px 0px #61ecf4 inset;
+.wrapShop .wrapPageDodateBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.wrapShop .wrapPageDodateBlock .wrapDonateBlock {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 600px;
   max-height: 225px;
-  margin-top: 50px;
-  background-color: #61ecf4;
+  margin-top: 80px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -62,13 +71,13 @@
   padding: 0 40px 0 40px;
 }
 
-.wrapShop .wrapDonateBlock img {
-  width: 190px;
+.wrapShop .wrapPageDodateBlock .wrapDonateBlock img {
+  width: 310px;
   position: relative;
   top: -40px;
 }
 
-.wrapShop .wrapDonateBlock .infoDonate {
+.wrapShop .wrapPageDodateBlock .wrapDonateBlock .infoDonate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,17 +90,89 @@
   padding: 0 0 30px 0;
 }
 
-.wrapShop .wrapDonateBlock .infoDonate:first-child {
+.wrapShop .wrapPageDodateBlock .wrapDonateBlock .infoDonate:first-child {
   font-size: 35px;
   line-height: 43px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.wrapShop .wrapDonateBlock .infoDonate:last-child {
+.wrapShop .wrapPageDodateBlock .wrapDonateBlock .infoDonate:last-child {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.wrapShop .wrapPageDodateBlock .one {
+  background: url("./../IMG/Voin1.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 100px 0px 250px 0px #61ecf4 inset;
+          box-shadow: 100px 0px 250px 0px #61ecf4 inset;
+  background-color: #61ecf4;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .two {
+  background: url("./../IMG/Minecraft-Survival-Episode-59-Automatic-Wool-Farm-41.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 300px 50px 250px 50px #ff7121 inset;
+          box-shadow: 300px 50px 250px 50px #ff7121 inset;
+  background-color: #ff7121;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .three {
+  background: url("./../IMG/Rectangle79.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 100px 0px 250px 0px #f4b161 inset;
+          box-shadow: 100px 0px 250px 0px #f4b161 inset;
+  background-color: #ffe921;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .four {
+  background: url("./../IMG/AdminBgrd.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 100px 0px 250px 0px #6186f4 inset;
+          box-shadow: 100px 0px 250px 0px #6186f4 inset;
+  background-color: #6186f4;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .fife {
+  background: url("./../IMG/Rectangle80.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 100px 0px 250px 0px #ff21b4 inset;
+          box-shadow: 100px 0px 250px 0px #ff21b4 inset;
+  background-color: #ff21b4;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .six {
+  background: url("./../IMG/Rectangle81.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 100px 0px 250px 0px #ff2121 inset;
+          box-shadow: 100px 0px 250px 0px #ff2121 inset;
+  background-color: #f46161;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .seven {
+  background: url("./../IMG/Rectangle82.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 200px 0px 250px 0px #ff21f6 inset;
+          box-shadow: 200px 0px 250px 0px #ff21f6 inset;
+  background-color: #f161f4;
+  width: 100%;
+}
+
+.wrapShop .wrapPageDodateBlock .eight {
+  background: url("./../IMG/Rectangle49.png") no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 50px 0px 250px 0px #ed21ff inset;
+          box-shadow: 50px 0px 250px 0px #ed21ff inset;
+  background-color: #f461e6;
+  width: 100%;
 }
 /*# sourceMappingURL=ShopDonate.module.css.map */

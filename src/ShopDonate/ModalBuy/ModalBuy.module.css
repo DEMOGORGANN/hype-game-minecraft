@@ -1,0 +1,215 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modalDialog {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 700px;
+  background: white;
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.modal .modalDialog .full {
+  padding: 40px 0 0 86px;
+}
+
+.modal .modalDialog .full .headInf .headInfo {
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+}
+
+.modal .modalDialog .full .headInf img {
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  width: 310px;
+}
+
+.modal .modalDialog .full .wrapInfoDonat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.modal .modalDialog .full .wrapInfoDonat span {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  color: #808080;
+}
+
+.modal .modalDialog .full .headInput {
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #858585;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput input[type="radio"] {
+  position: relative;
+  height: 21px;
+  width: 21px;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #858585;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #51bc40;
+  border: 2px solid #51bc40;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput input[type="radio"]:checked::before {
+  border: 2px solid #51bc40;
+}
+
+.modal .modalDialog .full .wrapInputBut form .wrapOneInput label {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3e3e3e;
+}
+
+.modal .modalDialog button {
+  max-width: 575px;
+  width: 100%;
+  background-color: #51bc40;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin-top: 26px;
+  height: 65px;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=ModalBuy.module.css.map */

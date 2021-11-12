@@ -1,0 +1,158 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    animation-name: appear;
+    animation-duration: 300ms;
+    flex-direction: column;
+
+    .modalDialog {
+        width: 100%;
+        border-radius: 15px;
+        max-width: 700px;
+        background: white;
+        position: relative;
+        // margin: 0 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slide-in;
+        animation-duration: 0.5s;
+
+        .full {
+            padding: 40px 0 0 86px;
+            .headInf {
+                .headInfo {
+                    font-size: 35px;
+                    line-height: 42px;
+                    text-transform: uppercase;
+                    color: #3e3e3e;
+                }
+                img {
+                    position: absolute;
+                    right: 0px;
+                    top: -60px;
+                    width: 310px;
+                }
+            }
+            .wrapInfoDonat {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+
+                span {
+                    display: inline-block;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 28px;
+                    color: #808080;
+                }
+                margin-bottom: 30px;
+            }
+            .headInput {
+                font-size: 15px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: #858585;
+            }
+            .wrapInputBut {
+                // display: flex;
+                form {
+                    .wrapOneInput {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                        input[type="radio"] {
+                            position: relative;
+                            height: 21px;
+                            width: 21px;
+                        }
+
+                        input[type="radio"]::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 21px;
+                            height: 21px;
+                            border-radius: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: white;
+                            border: 2px solid #858585;
+                        }
+
+                        input[type="radio"]:checked::after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 50%;
+                            background-color: #51bc40;
+                            border: 2px solid #51bc40;
+                            transform: translate(-50%, -50%);
+                            visibility: visible;
+                        }
+                        input[type="radio"]:checked::before {
+                            border: 2px solid #51bc40;
+                        }
+                        label {
+                            margin-left: 10px;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #3e3e3e;
+                        }
+                    }
+                }
+            }
+        }
+        button {
+            max-width: 575px;
+            width: 100%;
+            background-color: #51bc40;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: none;
+            margin-top: 26px;
+            height: 65px;
+            border-radius: 10px;
+            align-self: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
