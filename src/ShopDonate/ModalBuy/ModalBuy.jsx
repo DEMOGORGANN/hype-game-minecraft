@@ -44,7 +44,7 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
                             <span>- Пройти сквозь стену</span>
                             <span>- Набор</span>
                             <span>- Эндерсундук</span>
-                            <span>- Префикс на сервире [modalinfo.name]</span>
+                            <span>- Префикс на сервире "{modalinfo.name}"</span>
                             <span>- Возможность иметь 15 приватов на сервере</span>
                             <span>- Возможность иметь 15 домов на сервере</span>
                             <span>- Возможность зайти на заполненный сервер</span>

@@ -16,12 +16,13 @@ import NoAuthUser from "../NoAuthUser/NoAuthUser";
 
 import styles from './App.module.css'
 import Footer from "../Footer/Footer";
+import ProfileUsers from "../ProfileUsers/ProfileUsers";
 
 function App() {
 
   const [kolUser] = useState(Math.round(Math.random() * 10000))
   const [visible, setVisible] = useState(false)
-  const [auth, setAuth] = useState(false)
+  const [auth, setAuth] = useState(true)
   const [authUserT, setAuthUser] = useState({})
 
 
@@ -33,7 +34,7 @@ function App() {
 
     <BrowserRouter>
       <div className={styles.App}  >
-        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} />
+        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} auth={auth}/>
         <NavBar kolUser={kolUser} setVisible={setVisible} auth={auth} />
 
         <Route exact path="/">
@@ -49,16 +50,16 @@ function App() {
           <SupportTS />
         </Route>
         <Route exact path="/donate">
-          <ShopDonate auth={auth}/>
+          <ShopDonate auth={auth} />
         </Route>
 
         {
           auth === false ?
             <Route exact path="/myOffice">
-              <NoAuthUser setVisible={setVisible}/>
+              <NoAuthUser setVisible={setVisible} />
             </Route> :
             <Route exact path="/myOffice">
-              ура <button onClick={() => setAuth(false)}>выйти</button>
+              <ProfileUsers setAuth={setAuth} />
             </Route>
         }
 

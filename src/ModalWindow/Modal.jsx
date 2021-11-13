@@ -4,7 +4,7 @@ import { useState, useEffect } from "react/cjs/react.development";
 
 import styles from './Modal.module.css'
 
-export default function Modal({ visible, setVisible, setAuth }) {
+export default function Modal({ visible, setVisible, setAuth, auth }) {
 
     const [users, setUsers] = useState()
     const [valueLogin, setLogin] = useState("")
@@ -20,6 +20,10 @@ export default function Modal({ visible, setVisible, setAuth }) {
                 }
             )
     }, [])
+    useEffect(() => {
+        setLogin("")
+        setPassword("")
+    }, [auth])
 
 
     const ToComeIn = () => {
