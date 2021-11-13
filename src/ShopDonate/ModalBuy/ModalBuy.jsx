@@ -1,17 +1,22 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 
 
 import styles from './ModalBuy.module.css'
 
-export default function ModalBuy({ visible, setVisible, modalinfo }) {
+export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
+    const [prises, setPrises] = useState(1)
 
     useEffect(() => {
         document.querySelector("body").style.overflow = visible ? "hidden" : "auto";
     }, [visible])
 
+    useEffect(() => {
+        setPrises(1)
+    }, [visible])
 
-    const [prises, setPrises] = useState(1)
+
 
     if (visible === false) {
         return null;
@@ -76,7 +81,10 @@ export default function ModalBuy({ visible, setVisible, modalinfo }) {
 
                         </div>
                     </div>
-                    <button>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button>
+                    {auth === true ?
+                        <button>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button> :
+                        <NavLink to="/myOffice">Войти</NavLink>}
+
                 </div>
 
             </div>

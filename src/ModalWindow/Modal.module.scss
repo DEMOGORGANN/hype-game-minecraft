@@ -57,6 +57,10 @@
                 border: none;
             }
         }
+        .noAuth {
+            border: 0.1px solid red;
+            border-radius: 10px;
+        }
         .zxWrapBut {
             display: flex;
             justify-content: center;

@@ -1,0 +1,48 @@
+.wrapNoAuthUser {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapNoAuthUser h1 {
+  font-size: 25px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  margin-bottom: 50px;
+}
+
+.wrapNoAuthUser button {
+  background: #51bc40;
+  border: none;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 46px 20px 46px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+  max-width: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+/*# sourceMappingURL=NoAuthUser.module.css.map */

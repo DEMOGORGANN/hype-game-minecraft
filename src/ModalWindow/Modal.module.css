@@ -87,6 +87,11 @@
   border: none;
 }
 
+.modal .modalDialog .noAuth {
+  border: 0.1px solid red;
+  border-radius: 10px;
+}
+
 .modal .modalDialog .zxWrapBut {
   display: -webkit-box;
   display: -ms-flexbox;

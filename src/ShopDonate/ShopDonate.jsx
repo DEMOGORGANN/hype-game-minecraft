@@ -15,7 +15,7 @@ import warrior11 from './../IMG/warrior11.png'
 import warrior8 from './../IMG/warrior8.png'
 import ModalBuy from "./ModalBuy/ModalBuy";
 
-function ShopDonate() {
+function ShopDonate({ auth }) {
 
     const [activeBut, setActiveBut] = useState("Survival")
     const [visible, setVisible] = useState(false)
@@ -97,7 +97,7 @@ function ShopDonate() {
 
     return (
         <div className={styles.wrapShop}>
-            <ModalBuy visible={visible} setVisible={setVisible} modalinfo={modalinfo} />
+            <ModalBuy visible={visible} setVisible={setVisible} modalinfo={modalinfo} auth={auth}/>
             <div className={styles.wrapBut}>
                 <button
                     className={activeBut === "Survival" ? styles.activeBut : 0}

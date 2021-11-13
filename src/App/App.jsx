@@ -11,6 +11,7 @@ import Server from '../ServerPage/Server'
 import BanList from '../BanList/BanList'
 import SupportTS from "../SupportTS/SupportTS";
 import ShopDonate from "../ShopDonate/ShopDonate";
+import NoAuthUser from "../NoAuthUser/NoAuthUser";
 
 
 import styles from './App.module.css'
@@ -20,6 +21,9 @@ function App() {
 
   const [kolUser] = useState(Math.round(Math.random() * 10000))
   const [visible, setVisible] = useState(false)
+  const [auth, setAuth] = useState(false)
+  const [authUserT, setAuthUser] = useState({})
+
 
 
   useEffect(() => {
@@ -29,8 +33,8 @@ function App() {
 
     <BrowserRouter>
       <div className={styles.App}  >
-        <Modal visible={visible} setVisible={setVisible} />
-        <NavBar kolUser={kolUser} setVisible={setVisible} />
+        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} />
+        <NavBar kolUser={kolUser} setVisible={setVisible} auth={auth} />
 
         <Route exact path="/">
           <HomePage kolUser={kolUser} setVisible={setVisible} />
@@ -45,10 +49,18 @@ function App() {
           <SupportTS />
         </Route>
         <Route exact path="/donate">
-          <ShopDonate />
+          <ShopDonate auth={auth}/>
         </Route>
 
-
+        {
+          auth === false ?
+            <Route exact path="/myOffice">
+              <NoAuthUser setVisible={setVisible}/>
+            </Route> :
+            <Route exact path="/myOffice">
+              ура <button onClick={() => setAuth(false)}>выйти</button>
+            </Route>
+        }
 
 
 

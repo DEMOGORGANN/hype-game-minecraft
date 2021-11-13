@@ -1,10 +1,39 @@
 import React from "react";
+import { useState, useEffect } from "react/cjs/react.development";
 
 
 import styles from './Modal.module.css'
 
-export default function Modal({ visible, setVisible }) {
+export default function Modal({ visible, setVisible, setAuth }) {
 
+    const [users, setUsers] = useState()
+    const [valueLogin, setLogin] = useState("")
+    const [valuePassword, setPassword] = useState("")
+    const [checkGoodInfo, setInfo] = useState(true)
+
+    useEffect(() => {
+        fetch("http://localhost:3000/users")
+            .then(res => res.json())
+            .then(
+                (result) => {
+                    setUsers(result);
+                }
+            )
+    }, [])
+
+
+    const ToComeIn = () => {
+        users.forEach(i => {
+            console.log(i.name)
+            if (i.name === valueLogin && i.password === valuePassword) {
+                setAuth(true)
+                setVisible(false)
+            }
+            else {
+                setInfo(false)
+            }
+        })
+    }
 
 
     if (visible === false) {
@@ -16,11 +45,26 @@ export default function Modal({ visible, setVisible }) {
                     <div className={styles.modalHeader}>
                         <h3 className={styles.modalTitle}>Вход</h3>
                     </div>
-                    <div className={styles.modalBody}>
-                        <input type="text" placeholder="Введите свой игровой ник" />
+                    <div className={`${styles.modalBody} ${checkGoodInfo === true ? 0 : styles.noAuth}`} >
+                        <input
+                            type="text"
+                            placeholder="Введите свой игровой ник"
+                            onChange={(e) => {
+                                setLogin(e.target.value)
+                                setInfo(true)
+                            }} />
+                    </div>
+                    <div className={`${styles.modalBody} ${checkGoodInfo === true ? 0 : styles.noAuth}`}>
+                        <input
+                            type="text"
+                            placeholder="Введите свой пароль"
+                            onChange={(e) => {
+                                setPassword(e.target.value)
+                                setInfo(true)
+                            }} />
                     </div>
                     <div className={styles.zxWrapBut}>
-                        <button onClick={() => setVisible(false)}>войти в личный кабинет</button>
+                        <button to="/dsf" onClick={ToComeIn}>войти в личный кабинет</button>
                     </div>
                 </div>
             </div>

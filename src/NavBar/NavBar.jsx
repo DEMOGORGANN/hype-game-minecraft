@@ -14,7 +14,7 @@ import MaskGroup from './../IMG/MaskGroup.png'
 
 import styles from "./NavBar.module.css"
 
-function wrapNavBar({ kolUser, setVisible }) {
+function wrapNavBar({ kolUser, setVisible, auth }) {
     return (
         <div className={styles.wrapNAV}>
 
@@ -37,7 +37,7 @@ function wrapNavBar({ kolUser, setVisible }) {
                 <span>БАН ЛИСТ</span>
             </NavLink>
 
-            <NavLink activeClassName={styles.active}    exact to='/ts'>
+            <NavLink activeClassName={styles.active} exact to='/ts'>
                 <img src={Support} alt="" />
                 <span>ТЕХ.ПОДДЕРЖКА</span>
             </NavLink>
@@ -54,9 +54,13 @@ function wrapNavBar({ kolUser, setVisible }) {
                 <span>{kolUser}</span>
             </NavLink>
 
-            <NavLink exact to='#' className={styles.MyOffice} onClick={() => setVisible(true)}>
-                ЛИЧНЫЙ КАБИНЕТ
-            </NavLink>
+            {auth === false ?
+                <NavLink exact to='/myOffice' className={styles.MyOffice} onClick={() => setVisible(true)}>
+                    ЛИЧНЫЙ КАБИНЕТ
+                </NavLink> :
+                <NavLink exact to="/myOffice" className={styles.MyOffice}>
+                    Личный кабинет
+                </NavLink>}
         </div >
     );
 }
