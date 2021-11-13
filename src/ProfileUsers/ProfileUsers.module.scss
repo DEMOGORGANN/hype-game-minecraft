@@ -8,7 +8,7 @@
         align-items: center;
         .avatar {
             max-width: 126px;
-            border: 5px solid #51BC40;
+            border: 5px solid #51bc40;
             border-radius: 50%;
             padding: 4px;
         }
@@ -65,6 +65,41 @@
             border-radius: 10px;
             text-decoration: none;
             padding: 26px 23px 25px 24px;
+        }
+        button {
+            background: #51bc40;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 28px 33px 23px 33px;
+            margin-top: 13px;
+            cursor: pointer;
+            span {
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            :first-child {
+                font-size: 25px;
+                margin-right: 10px;
+            }
+        }
+        .exitAccount {
+            background: #bc4099;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 28px 100px 23px 100px;
+            margin-top: 13px;
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
         }
     }
 }

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
   BrowserRouter,
-  Route
+  Route,
+  Switch,
+  Redirect
 } from "react-router-dom";
 
 import NavBar from "./../NavBar/NavBar"
@@ -34,35 +36,37 @@ function App() {
 
     <BrowserRouter>
       <div className={styles.App}  >
-        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} auth={auth}/>
+        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} auth={auth} />
         <NavBar kolUser={kolUser} setVisible={setVisible} auth={auth} />
 
-        <Route exact path="/">
-          <HomePage kolUser={kolUser} setVisible={setVisible} />
-        </Route>
-        <Route exact path="/servers">
-          <Server />
-        </Route>
-        <Route exact path="/banList">
-          <BanList />
-        </Route>
-        <Route exact path="/ts">
-          <SupportTS />
-        </Route>
-        <Route exact path="/donate">
-          <ShopDonate auth={auth} />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <HomePage kolUser={kolUser} setVisible={setVisible} />
+          </Route>
+          <Route exact path="/servers">
+            <Server />
+          </Route>
+          <Route exact path="/banList">
+            <BanList />
+          </Route>
+          <Route exact path="/ts">
+            <SupportTS />
+          </Route>
+          <Route exact path="/donate">
+            <ShopDonate auth={auth} />
+          </Route>
 
-        {
-          auth === false ?
-            <Route exact path="/myOffice">
-              <NoAuthUser setVisible={setVisible} />
-            </Route> :
-            <Route exact path="/myOffice">
-              <ProfileUsers setAuth={setAuth} />
-            </Route>
-        }
-
+          {
+            auth === false ?
+              <Route exact path="/myOffice">
+                <NoAuthUser setVisible={setVisible} />
+              </Route> :
+              <Route exact path="/myOffice">
+                <ProfileUsers setAuth={setAuth} />
+              </Route>
+          }
+          <Redirect to="/" />
+        </Switch>
 
 
         <Footer />

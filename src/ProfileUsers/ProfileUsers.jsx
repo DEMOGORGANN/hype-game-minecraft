@@ -11,7 +11,7 @@ function ProfileUsers({ setAuth }) {
         <div className={styles.WrapProfileUsers}>
 
             <div className={styles.leftInfo}>
-                <img src={avatarUser} alt="" className={styles.avatar}/>
+                <img src={avatarUser} alt="" className={styles.avatar} />
                 <div className={styles.balans}>
                     <h3>Баланс</h3>
                     <h2>₽399</h2>
@@ -21,6 +21,11 @@ function ProfileUsers({ setAuth }) {
                     <span>Нет привелегии</span>
                 </div>
                 <NavLink exact to="/donate">Преобрести привелегию</NavLink>
+                <button>
+                    <span>+</span>
+                    <span>Пополнить баланс</span>
+                </button>
+                <button className={styles.exitAccount} onClick={() => setAuth(false)}>выйти</button>
             </div>
 
 
@@ -29,7 +34,7 @@ function ProfileUsers({ setAuth }) {
 
 
 
-            <button onClick={() => setAuth(false)}>выйти</button>
+
         </div>
     );
 }
