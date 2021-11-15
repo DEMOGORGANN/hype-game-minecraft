@@ -4,7 +4,7 @@ import { useState, useEffect } from "react/cjs/react.development";
 
 import styles from './Modal.module.css'
 
-export default function Modal({ visible, setVisible, setAuth, auth }) {
+export default function Modal({ visible, setVisible, setAuth, auth, setAuthUser }) {
 
     const [users, setUsers] = useState()
     const [valueLogin, setLogin] = useState("")
@@ -32,6 +32,7 @@ export default function Modal({ visible, setVisible, setAuth, auth }) {
             if (i.name === valueLogin && i.password === valuePassword) {
                 setAuth(true)
                 setVisible(false)
+                setAuthUser(i)
             }
             else {
                 setInfo(false)

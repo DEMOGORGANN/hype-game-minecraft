@@ -98,7 +98,7 @@ function ShopDonate({ auth }) {
     return (
         <div className={styles.wrapShop}>
             <ModalBuy visible={visible} setVisible={setVisible} modalinfo={modalinfo} auth={auth}/>
-            <div className={styles.wrapBut}>
+            <div className={styles.wrapButns}>
                 <button
                     className={activeBut === "Survival" ? styles.activeBut : 0}
                     onClick={() => setActiveBut("Survival")}>

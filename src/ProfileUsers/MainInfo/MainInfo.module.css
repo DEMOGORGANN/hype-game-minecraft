@@ -1,0 +1,71 @@
+.MainInform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.MainInform .wrapOneBlock {
+  background-color: white;
+  max-width: 190px;
+  width: 100%;
+  padding: 31px 80px 33px 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.MainInform .wrapOneBlock h3 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 54px;
+  color: #51bc40;
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 7px;
+}
+
+.MainInform .wrapOneBlock span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #858585;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.MainInform .wrapOneBlock img {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.MainInform .green img {
+  background: rgba(81, 188, 64, 0.25);
+}
+
+.MainInform .pirple img {
+  background: rgba(163, 64, 188, 0.25);
+}
+
+.MainInform .red img {
+  background: rgba(188, 64, 64, 0.25);
+}
+
+.MainInform .yellow img {
+  background: rgba(186, 188, 64, 0.25);
+}
+
+.MainInform .blue img {
+  background: rgba(64, 188, 173, 0.25);
+  padding: 21px 18px 20px 17px;
+}
+
+.MainInform .twoRed img {
+  background: rgba(188, 64, 153, 0.25);
+}
+/*# sourceMappingURL=MainInfo.module.css.map */

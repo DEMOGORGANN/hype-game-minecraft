@@ -77,12 +77,14 @@
         {
             "name": "aboba",
             "password": "abobo",
-            "money": 100
+            "money": 1000,
+            "donate": "НЕТ ПРИВЕЛЕГИИ"
         },
         {
             "name": "aboba343",
             "password": "abob523o",
-            "money": 100
+            "money": 100,
+            "donate": "НЕТ ПРИВЕЛЕГИИ"
         }
     ]
 }

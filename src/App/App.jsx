@@ -24,7 +24,7 @@ function App() {
 
   const [kolUser] = useState(Math.round(Math.random() * 10000))
   const [visible, setVisible] = useState(false)
-  const [auth, setAuth] = useState(true)
+  const [auth, setAuth] = useState(false)
   const [authUserT, setAuthUser] = useState({})
 
 
@@ -32,11 +32,14 @@ function App() {
   useEffect(() => {
     document.querySelector("body").style.overflow = visible ? "hidden" : "auto";
   }, [visible])
+
+  console.log(authUserT)
+
   return (
 
     <BrowserRouter>
       <div className={styles.App}  >
-        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} auth={auth} />
+        <Modal visible={visible} setVisible={setVisible} setAuth={setAuth} auth={auth} setAuthUser={setAuthUser} />
         <NavBar kolUser={kolUser} setVisible={setVisible} auth={auth} />
 
         <Switch>
@@ -62,7 +65,7 @@ function App() {
                 <NoAuthUser setVisible={setVisible} />
               </Route> :
               <Route exact path="/myOffice">
-                <ProfileUsers setAuth={setAuth} />
+                <ProfileUsers setAuth={setAuth} authUserT={authUserT} />
               </Route>
           }
           <Redirect to="/" />

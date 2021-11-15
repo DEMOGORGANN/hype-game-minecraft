@@ -1,31 +1,40 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import styles from './ProfileUsers.module.css'
 
-import avatarUser from './../IMG/avatarUser.png'
-import Group18 from './../IMG/Group18.svg'
+import LeftInfo from './LeftInfo/LeftInfo'
+import MainInfo from "./MainInfo/MainInfo";
 
-function ProfileUsers({ setAuth }) {
+function ProfileUsers({ setAuth, authUserT }) {
+
+    const [activButtn, setActivButts] = useState('MainInf')
+
+
 
     return (
         <div className={styles.WrapProfileUsers}>
 
-            <div className={styles.leftInfo}>
-                <img src={avatarUser} alt="" className={styles.avatar} />
-                <div className={styles.balans}>
-                    <h3>Баланс</h3>
-                    <h2>₽399</h2>
+            <LeftInfo setAuth={setAuth} authUserT={authUserT} />
+
+
+            <div className={styles.rigtInfo}>
+                <div className={styles.wrapBut}>
+                    <button
+                        className={activButtn === "MainInf" ? styles.activButns : 0}
+                        onClick={() => setActivButts("MainInf")}>
+                        ОСНОВНАЯ ИНФОРМАЦИЯ
+                    </button>
+                    <button
+                        className={activButtn === "Promocode" ? styles.activButns : 0}
+                        onClick={() => setActivButts("Promocode")}>
+                        промокоды
+                    </button>
+                    <button
+                        className={activButtn === "Tranctishion" ? styles.activButns : 0}
+                        onClick={() => setActivButts("Tranctishion")}>
+                        ТРАНЗАКЦИИ
+                    </button>
                 </div>
-                <div className={styles.Donate}>
-                    <img src={Group18} alt="" />
-                    <span>Нет привелегии</span>
-                </div>
-                <NavLink exact to="/donate">Преобрести привелегию</NavLink>
-                <button>
-                    <span>+</span>
-                    <span>Пополнить баланс</span>
-                </button>
-                <button className={styles.exitAccount} onClick={() => setAuth(false)}>выйти</button>
+                <MainInfo />
             </div>
 
 

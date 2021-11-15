@@ -1,147 +1,47 @@
 .WrapProfileUsers {
   margin-top: 50px;
-  max-width: 260px;
-}
-
-.WrapProfileUsers .leftInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.WrapProfileUsers .leftInfo .avatar {
-  max-width: 126px;
-  border: 5px solid #51bc40;
-  border-radius: 50%;
-  padding: 4px;
+.WrapProfileUsers .rigtInfo {
+  max-width: 1050px;
+  width: 100%;
 }
 
-.WrapProfileUsers .leftInfo .balans {
-  margin-top: 20px;
+.WrapProfileUsers .rigtInfo .wrapBut {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.WrapProfileUsers .leftInfo .balans h3 {
-  font-weight: 600;
+.WrapProfileUsers .rigtInfo .wrapBut button {
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  color: #3e3e3e;
-  background-color: #f4f4f4;
-  padding: 18px 16px 16px 23px;
-  border-radius: 10px 0 0 10px;
+  color: #858585;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-right: 18px;
+  background-color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
-.WrapProfileUsers .leftInfo .balans h2 {
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+.WrapProfileUsers .rigtInfo .wrapBut button:last-child {
+  margin: 0;
+}
+
+.WrapProfileUsers .rigtInfo .wrapBut .activButns {
   color: #51bc40;
-  background-color: #f4f4f4;
-  padding: 15px 56px 14px 55px;
-  margin-left: 2px;
-  border-radius: 0 10px 10px 0;
-}
-
-.WrapProfileUsers .leftInfo .Donate {
-  margin-top: 30px;
-  max-width: 260px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: rgba(81, 188, 64, 0.15);
-  padding: 15px 64px 15px 26px;
-  border-radius: 10px;
-}
-
-.WrapProfileUsers .leftInfo .Donate span {
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #51bc40;
-  margin-left: 9px;
-}
-
-.WrapProfileUsers .leftInfo a {
-  margin-top: 13px;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #e4b91f;
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 26px 23px 25px 24px;
-}
-
-.WrapProfileUsers .leftInfo button {
-  background: #51bc40;
-  border-radius: 10px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 28px 33px 23px 33px;
-  margin-top: 13px;
-  cursor: pointer;
-}
-
-.WrapProfileUsers .leftInfo button span {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.WrapProfileUsers .leftInfo button :first-child {
-  font-size: 25px;
-  margin-right: 10px;
-}
-
-.WrapProfileUsers .leftInfo .exitAccount {
-  background: #bc4099;
-  border-radius: 10px;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 28px 100px 23px 100px;
-  margin-top: 13px;
-  cursor: pointer;
-  color: white;
-  text-transform: uppercase;
-  font-size: 16px;
 }
 /*# sourceMappingURL=ProfileUsers.module.css.map */

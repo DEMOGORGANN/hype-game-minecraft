@@ -3,7 +3,7 @@
   max-width: 1400px;
 }
 
-.wrapShop .wrapBut {
+.wrapShop .wrapButns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,7 +11,7 @@
       justify-content: space-around;
 }
 
-.wrapShop .wrapBut button {
+.wrapShop .wrapButns button {
   max-width: 330px;
   width: 100%;
   height: 60px;
@@ -35,7 +35,7 @@
   transition: 0.5s;
 }
 
-.wrapShop .wrapBut .activeBut {
+.wrapShop .wrapButns .activeBut {
   background: rgba(81, 188, 64, 0.15);
   border-radius: 10px;
   color: #51bc40;
