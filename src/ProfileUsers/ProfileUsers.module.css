@@ -5,6 +5,9 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .WrapProfileUsers .rigtInfo {
@@ -43,5 +46,65 @@
 .WrapProfileUsers .rigtInfo .wrapBut .activButns {
   color: #51bc40;
   background: rgba(81, 188, 64, 0.15);
+}
+
+.noActive {
+  display: none;
+}
+
+.activeInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 5vw;
+  background: rgba(228, 31, 31, 0.2);
+  border-radius: 10px;
+  max-width: 1400px;
+  padding: 29px 0 27px 3%;
+}
+
+.activeInf span {
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #e41f1f;
+  margin-left: 15px;
+}
+
+.notClickGood {
+  display: none;
+}
+
+.goodInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 5vw;
+  background: rgba(81, 188, 64, 0.2);
+  border-radius: 10px;
+  max-width: 1400px;
+  padding: 29px 0 27px 3%;
+}
+
+.goodInput span {
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #51bc40;
 }
 /*# sourceMappingURL=ProfileUsers.module.css.map */

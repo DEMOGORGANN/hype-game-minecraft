@@ -2,6 +2,7 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 
     .rigtInfo {
         max-width: 1050px;
@@ -31,5 +32,48 @@
                 background: rgba(81, 188, 64, 0.15);
             }
         }
+    }
+}
+
+.noActive {
+    display: none;
+}
+.activeInf {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5vw;
+    background: rgba(228, 31, 31, 0.2);
+    border-radius: 10px;
+    max-width: 1400px;
+    padding: 29px 0 27px 3%;
+    span {
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #e41f1f;
+        margin-left: 15px;
+    }
+}
+.notClickGood {
+    display: none;
+}
+.goodInput {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 5vw;
+    background: rgba(81, 188, 64, 0.2);
+    border-radius: 10px;
+    max-width: 1400px;
+    padding: 29px 0 27px 3%;
+    span {
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-left: 15px;
+        color: #51bc40;
     }
 }
