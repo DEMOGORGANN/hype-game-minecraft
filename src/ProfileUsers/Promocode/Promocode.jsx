@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from './Promocode.module.css'
 
 
-function Promocode({ noInput, setNoInput, setGoodInput }) {
+function Promocode({ noInput, setNoInput, setGoodInput, authUserT, setAuthUser }) {
 
     const [promocode, setPromocode] = useState([])
     const [valuePromocode, setValuePromocode] = useState("")
@@ -21,18 +21,20 @@ function Promocode({ noInput, setNoInput, setGoodInput }) {
     function onClickPromocode(e) {
         e.preventDefault()
 
-        console.log(valuePromocode)
-        promocode.forEach(i => {
-            console.log(i)
-            if (i === valuePromocode) {
-                console.log("super")
-                setGoodInput(styles.goodInput)
-                setNoInput("")
-            } else {
-                setNoInput(styles.noInput)
-                setGoodInput("")
+        if (promocode.indexOf(valuePromocode) >= 0) {
+            setGoodInput(styles.goodInput)
+            setNoInput("")
+            const bufUsr = {
+                name: authUserT.name,
+                password: authUserT.password,
+                money: authUserT.money + 100,
+                donate: authUserT.donate
             }
-        })
+            setAuthUser(bufUsr)
+        } else {
+            setNoInput(styles.noInput)
+            setGoodInput("")
+        }
     }
 
 

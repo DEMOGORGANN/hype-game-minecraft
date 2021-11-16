@@ -8,7 +8,7 @@ import Promocode from "./Promocode/Promocode";
 
 import Group52 from './../IMG/Group52.png'
 import Group53 from './../IMG/Group53.png'
-function ProfileUsers({ setAuth, authUserT }) {
+function ProfileUsers({ setAuth, authUserT, setAuthUser }) {
 
     const [activButtn, setActivButts] = useState('MainInf')
     const [noInput, setNoInput] = useState("")
@@ -46,7 +46,14 @@ function ProfileUsers({ setAuth, authUserT }) {
                         </button>
                     </div>
                     {activButtn === "MainInf" ? <MainInfo /> : null}
-                    {activButtn === "Promocode" ? <Promocode noInput={noInput} setNoInput={setNoInput} setGoodInput={setGoodInput} /> : null}
+                    {activButtn === "Promocode" ?
+                        <Promocode
+                            noInput={noInput}
+                            setNoInput={setNoInput}
+                            setGoodInput={setGoodInput}
+                            authUserT={authUserT}
+                            setAuthUser={setAuthUser}
+                        /> : null}
                 </div>
 
             </div>

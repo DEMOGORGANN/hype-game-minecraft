@@ -33,7 +33,6 @@ function App() {
     document.querySelector("body").style.overflow = visible ? "hidden" : "auto";
   }, [visible])
 
-  console.log(authUserT)
 
   return (
 
@@ -65,7 +64,7 @@ function App() {
                 <NoAuthUser setVisible={setVisible} />
               </Route> :
               <Route exact path="/myOffice">
-                <ProfileUsers setAuth={setAuth} authUserT={authUserT} />
+                <ProfileUsers setAuth={setAuth} authUserT={authUserT} setAuthUser={setAuthUser} />
               </Route>
           }
           <Redirect to="/" />
