@@ -48,7 +48,6 @@ function BanList() {
                 return values.nameBan.indexOf(find) !== -1;
             });
         }
-        console.log(value)
     }
 
 

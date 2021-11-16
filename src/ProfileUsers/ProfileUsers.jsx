@@ -4,6 +4,7 @@ import styles from './ProfileUsers.module.css'
 import LeftInfo from './LeftInfo/LeftInfo'
 import MainInfo from "./MainInfo/MainInfo";
 import Promocode from "./Promocode/Promocode";
+import Transition from "./Transition/Transition";
 
 
 import Group52 from './../IMG/Group52.png'
@@ -54,6 +55,8 @@ function ProfileUsers({ setAuth, authUserT, setAuthUser }) {
                             authUserT={authUserT}
                             setAuthUser={setAuthUser}
                         /> : null}
+                    {activButtn === "Tranctishion" ? <Transition authUserT={authUserT}/> : null}
+
                 </div>
 
             </div>

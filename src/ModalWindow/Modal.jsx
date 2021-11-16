@@ -28,7 +28,6 @@ export default function Modal({ visible, setVisible, setAuth, auth, setAuthUser 
 
     const ToComeIn = () => {
         users.forEach(i => {
-            console.log(i.name)
             if (i.name === valueLogin && i.password === valuePassword) {
                 setAuth(true)
                 setVisible(false)
