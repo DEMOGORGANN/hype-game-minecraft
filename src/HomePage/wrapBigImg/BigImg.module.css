@@ -19,7 +19,7 @@
           justify-content: center;
 }
 
-.wrapd .but button {
+.wrapd .but a {
   background: #51bc40;
   margin-top: 50px;
   border: none;
@@ -36,12 +36,12 @@
   margin: 0;
 }
 
-.wrapd .but button img {
+.wrapd .but a img {
   width: 31px;
   margin-right: 16px;
 }
 
-.wrapd .but button span {
+.wrapd .but a span {
   color: white;
   font-size: 18px;
   font-weight: 700;

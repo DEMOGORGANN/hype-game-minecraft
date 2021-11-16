@@ -9,13 +9,13 @@ import ForMe from './ForMe/ForMe'
 import ForServer from "./ForServers/ForServer";
 import ForDonate from "./ForDonate/ForDonate";
 
-function HomePage({ kolUser, setVisible }) {
+function HomePage({ kolUser, setVisible, auth }) {
 
 
     return (
 
         <div className={styles.WrapHomePage}>
-            <BigImg setVisible={setVisible}/>
+            <BigImg setVisible={setVisible} auth={auth} />
             <ForMe kolUser={kolUser} />
             <ForServer />
             <ForDonate />

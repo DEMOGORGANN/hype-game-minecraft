@@ -43,7 +43,7 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <HomePage kolUser={kolUser} setVisible={setVisible} />
+            <HomePage kolUser={kolUser} setVisible={setVisible} auth={auth} />
           </Route>
           <Route exact path="/servers">
             <Server />
