@@ -74,51 +74,9 @@
                         margin-right: 15px;
                         text-decoration: none;
                     }
-                    .arrow {
-                        position: relative;
-                        top: -10px;
-                        width: 80px;
-                        height: 50px;
-                        margin: 0;
-                        div {
-                            position: relative;
-                            top: 22px;
-                            width: 45px;
-                            height: 4px;
-                            background-color: #e4b91f;
-                            left: 0;
-                            display: block;
-                            margin: 0;
-                        }
-                        div::after {
-                            content: "";
-                            position: absolute;
-                            width: 17px;
-                            height: 4px;
-                            top: -5px;
-                            right: -6px;
-                            background-color: #e4b91f;
-                            transform: rotate(45deg);
-                            margin: 0;
-                        }
-                        div::before {
-                            content: "";
-                            position: absolute;
-                            width: 17px;
-                            height: 4px;
-                            top: 5px;
-                            right: -6px;
-                            background-color: #e4b91f;
-                            transform: rotate(-45deg);
-                            margin: 0;
-                        }
-                    }
                 }
-                .wrapLinkMarketAndArrow:hover {
-                    .arrow {
-                        animation: arrow-1 1s linear infinite;
-                    }
-                }
+
+                
             }
         }
     }

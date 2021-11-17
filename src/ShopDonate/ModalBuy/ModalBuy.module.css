@@ -173,6 +173,12 @@
   cursor: pointer;
 }
 
+.modal .modalDialog .noBuy {
+  background: #BC4040;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .modal .modalDialog a {
   max-width: 575px;
   width: 100%;

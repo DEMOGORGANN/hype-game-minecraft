@@ -8,6 +8,7 @@ import styles from './ModalBuy.module.css'
 export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUserT, setAuthUser }) {
     const [prises, setPrises] = useState(1)
     const [dateDonate, setDate] = useState({ day: 0, mount: 0, year: 0, fullTime: "" })
+    const [goodBuy, setGoodBuy] = useState(true)
 
     useEffect(() => {
         document.querySelector("body").style.overflow = visible ? "hidden" : "auto";
@@ -23,6 +24,11 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUse
         if (authUserT.money > Math.floor(modalinfo.price * prises)) {
             setVisible(false)
             getAndSetDate(dateDonate)
+        } else {
+            setGoodBuy(false)
+            setTimeout(() => {
+                setGoodBuy(true)
+            }, 10000)
         }
     }
     function getAndSetDate({ day, mount, year, fullTime }) {
@@ -33,7 +39,8 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUse
                 password: authUserT.password,
                 money: authUserT.money - Math.floor(modalinfo.price * prises),
                 donate: modalinfo.name,
-                dateDonate: time
+                dateDonate: time,
+                ListTrans: authUserT.ListTrans
             }
             setAuthUser(bufUsr)
         } else {
@@ -56,7 +63,8 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUse
                 password: authUserT.password,
                 money: authUserT.money - Math.floor(modalinfo.price * prises),
                 donate: modalinfo.name,
-                dateDonate: time
+                dateDonate: time,
+                ListTrans: authUserT.ListTrans
             }
             setAuthUser(bufUsr)
         }
@@ -169,8 +177,9 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUse
                         </div>
                     </div>
                     {auth === true ?
-                        <button onClick={(e) => buyDonate(e)}>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button> :
-                        <NavLink to="/myOffice">Войти</NavLink>}
+                        <button className={goodBuy === false ? styles.noBuy : null} onClick={(e) => buyDonate(e)}>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button> :
+                        <NavLink to="/myOffice">Войти</NavLink>
+                    }
 
                 </div>
 

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 
 import donateImgHomePage from './../../IMG/donateImgHomePage.png'
-import PersMIn from './../../IMG/PersMIn.png'
+import PersMIn from './../../IMG/PersMIn23.png'
 import Market from './../../IMG/Market.png'
 
 import styles from './ForDonate.module.css'
@@ -30,12 +30,8 @@ export default function ForDonate() {
                         <img src={Market} alt="" />
 
                         <div className={styles.wrapLinkMarketAndArrow}>
-                            <NavLink exact to='/maskGro' >Перейти в магазин<br /> к привелегиям</NavLink>
-                            <div className={styles.arrow}>
-                                <div></div>
-                            </div>
+                            <NavLink exact to='/donate' >Перейти в магазин<br /> к привелегиям</NavLink>
                         </div>
-
                     </div>
                 </div>
             </div>

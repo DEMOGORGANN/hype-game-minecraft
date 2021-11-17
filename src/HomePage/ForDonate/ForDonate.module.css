@@ -107,56 +107,6 @@
   text-decoration: none;
 }
 
-.wrapDonate .infoDonateHomePage .wrapInfoDonate .WrapLastEl .wrapLinkMarketAndArrow .arrow {
-  position: relative;
-  top: -10px;
-  width: 80px;
-  height: 50px;
-  margin: 0;
-}
-
-.wrapDonate .infoDonateHomePage .wrapInfoDonate .WrapLastEl .wrapLinkMarketAndArrow .arrow div {
-  position: relative;
-  top: 22px;
-  width: 45px;
-  height: 4px;
-  background-color: #e4b91f;
-  left: 0;
-  display: block;
-  margin: 0;
-}
-
-.wrapDonate .infoDonateHomePage .wrapInfoDonate .WrapLastEl .wrapLinkMarketAndArrow .arrow div::after {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 4px;
-  top: -5px;
-  right: -6px;
-  background-color: #e4b91f;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin: 0;
-}
-
-.wrapDonate .infoDonateHomePage .wrapInfoDonate .WrapLastEl .wrapLinkMarketAndArrow .arrow div::before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 4px;
-  top: 5px;
-  right: -6px;
-  background-color: #e4b91f;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  margin: 0;
-}
-
-.wrapDonate .infoDonateHomePage .wrapInfoDonate .WrapLastEl .wrapLinkMarketAndArrow:hover .arrow {
-  -webkit-animation: arrow-1 1s linear infinite;
-          animation: arrow-1 1s linear infinite;
-}
-
 @-webkit-keyframes arrow-1 {
   0% {
     left: 0;

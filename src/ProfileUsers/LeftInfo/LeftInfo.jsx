@@ -21,7 +21,7 @@ function LeftInfo({ setAuth, authUserT }) {
                     <span>{authUserT.dateDonate}</span>
                 </div>
             </div>
-            <NavLink exact to="/donate">Преобрести привелегию</NavLink>
+            {authUserT.donate === "НЕТ ПРИВЕЛЕГИИ" ? <NavLink exact to="/donate">Преобрести привелегию</NavLink> : null}
             <button>
                 <span>+</span>
                 <span>Пополнить баланс</span>

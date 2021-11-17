@@ -28,7 +28,8 @@ function Promocode({ noInput, setNoInput, setGoodInput, authUserT, setAuthUser }
                 name: authUserT.name,
                 password: authUserT.password,
                 money: authUserT.money + 100,
-                donate: authUserT.donate
+                donate: authUserT.donate,
+                ListTrans: authUserT.ListTrans
             }
             setAuthUser(bufUsr)
 
