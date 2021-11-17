@@ -1,0 +1,222 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-size: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modalDialog {
+  width: 100%;
+  border-radius: 15px;
+  max-width: 700px;
+  background: white;
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  padding: 33px 66px 62px 39px;
+  max-width: 575px;
+}
+
+.modal .modalDialog h1 {
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+
+.modal .modalDialog input {
+  border: none;
+  background-color: #f7f7f7;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #858585;
+  padding: 27px 0 27px 2%;
+  margin-top: 12px;
+}
+
+.modal .modalDialog input:first-child {
+  margin-top: 22px;
+}
+
+.modal .modalDialog h2 {
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  margin: 30px 0 0 0;
+}
+
+.modal .modalDialog .wrapButtonsBuy {
+  margin-top: 32px;
+}
+
+.modal .modalDialog .wrapButtonsBuy button {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding: 0 0 21px 0;
+  border-bottom: 2px solid #f5f5f5;
+  border-radius: 2px;
+}
+
+.modal .modalDialog .wrapButtonsBuy button:first-child {
+  margin-right: 39px;
+}
+
+.modal .modalDialog .wrapButtonsBuy .activButB {
+  border-bottom: 2px solid #51bc40;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal .modalDialog .wrapUnitsPay {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 260px;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal .modalDialog .wrapUnitsPay .Yandex {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal .modalDialog .wrapUnitsPay .Yandex img {
+  padding: 28px 27px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.modal .modalDialog .wrapUnitsPay .ethereum1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal .modalDialog .wrapUnitsPay .ethereum1 img {
+  padding: 29px 46px;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f5f5f5;
+}
+
+.modal .modalDialog .wrapUnitsPay .bitcoin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal .modalDialog .wrapUnitsPay .bitcoin img {
+  padding: 51px 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.modal .modalDialog .wrapUnitsPay .Steam {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal .modalDialog .wrapUnitsPay .Steam img {
+  padding: 9px 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.modal .modalDialog .wrapUnitsPay .Visaa {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal .modalDialog .wrapUnitsPay .Visaa img {
+  padding: 40px 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: #f5f5f5;
+}
+
+.modal .modalDialog .wrapUnitsPay .activBTS {
+  border: 2px solid #51bc40;
+  border-radius: 10px;
+}
+
+.modal .modalDialog button {
+  margin-top: 30px;
+  background-color: #51bc40;
+  border: none;
+  padding: 24px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*# sourceMappingURL=ModalWAddBalance.module.css.map */

@@ -16,7 +16,7 @@ function Promocode({ noInput, setNoInput, setGoodInput, authUserT, setAuthUser }
                     setPromocode(result);
                 }
             )
-    }, [])
+    })
 
     function onClickPromocode(e) {
         e.preventDefault()

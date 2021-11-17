@@ -3,7 +3,7 @@ import styles from './Transition.module.css'
 
 import Nice from './../../IMG/Nice.svg'
 import NoNice from './../../IMG/NoNice.svg'
-function Transition({ authUserT }) {
+function Transition({ ListTrans }) {
 
 
     return (
@@ -15,7 +15,7 @@ function Transition({ authUserT }) {
                 <span>статус</span>
             </div>
             <div className={styles.wrapUserTra}>
-                {authUserT.ListTrans.map(i => {
+                {ListTrans.map(i => {
                     return (
                         <div key={i.id} className={styles.TransitionInf}>
                             <span>{i.id}</span>

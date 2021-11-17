@@ -16,6 +16,7 @@ function ProfileUsers({ setAuth, authUserT, setAuthUser }) {
     const [goodInput, setGoodInput] = useState("")
 
 
+
     useEffect(() => {
         setNoInput("")
         setGoodInput("")
@@ -55,7 +56,7 @@ function ProfileUsers({ setAuth, authUserT, setAuthUser }) {
                             authUserT={authUserT}
                             setAuthUser={setAuthUser}
                         /> : null}
-                    {activButtn === "Tranctishion" ? <Transition authUserT={authUserT}/> : null}
+                    {activButtn === "Tranctishion" ? <Transition ListTrans={authUserT.ListTrans} /> : null}
 
                 </div>
 
@@ -68,6 +69,7 @@ function ProfileUsers({ setAuth, authUserT, setAuthUser }) {
                 <img src={Group53} alt="" />
                 <span>промокод успешно активирован!</span>
             </div>
+
         </div>
     );
 }
