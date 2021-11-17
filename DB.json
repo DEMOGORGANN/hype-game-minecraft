@@ -79,6 +79,7 @@
             "password": "abobo",
             "money": 1000,
             "donate": "НЕТ ПРИВЕЛЕГИИ",
+            "dateDonate": "",
             "ListTrans": [
                 {
                     "id": "12003",
@@ -111,6 +112,7 @@
             "password": "abob523o",
             "money": 100,
             "donate": "НЕТ ПРИВЕЛЕГИИ",
+            "dateDonate": "",
             "ListTrans": [
                 {
                     "id": "one",

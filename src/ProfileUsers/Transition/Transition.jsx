@@ -23,7 +23,7 @@ function Transition({ authUserT }) {
                             <span>{i.times}</span>
                             <div className={styles.wrapStatus}>
                                 {i.status === "Проведено" ? <img src={Nice} alt="" /> : <img src={NoNice} alt="" />}
-                                {i.status === "Проведено" ? <span>Проведено</span> : <span>Отменено</span>}
+                                {i.status === "Проведено" ? <span style={{ color: "#20CA46" }}>Проведено</span> : <span style={{ color: "#D15454" }}>Отменено</span>}
                             </div>
                         </div>
                     )

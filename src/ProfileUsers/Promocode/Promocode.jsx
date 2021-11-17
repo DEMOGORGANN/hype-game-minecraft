@@ -31,6 +31,7 @@ function Promocode({ noInput, setNoInput, setGoodInput, authUserT, setAuthUser }
                 donate: authUserT.donate
             }
             setAuthUser(bufUsr)
+
         } else {
             setNoInput(styles.noInput)
             setGoodInput("")

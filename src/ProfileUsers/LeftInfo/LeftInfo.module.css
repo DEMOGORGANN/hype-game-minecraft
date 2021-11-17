@@ -64,17 +64,38 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(81, 188, 64, 0.15);
-  padding: 15px 64px 15px 26px;
+  padding: 15px 0px 15px 0px;
   border-radius: 10px;
+  width: 100%;
 }
 
-.leftInfo .Donate span {
+.leftInfo .Donate .goodDon {
+  margin-left: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftInfo .Donate .goodDon span {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #51bc40;
-  margin-left: 9px;
+  margin-bottom: 5px;
+}
+
+.leftInfo .Donate .goodDon span:last-child {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(81, 188, 64, 0.5);
+  margin: 0;
 }
 
 .leftInfo a {

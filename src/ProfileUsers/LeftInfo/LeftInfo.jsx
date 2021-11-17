@@ -15,8 +15,11 @@ function LeftInfo({ setAuth, authUserT }) {
                 <h2>₽{authUserT.money}</h2>
             </div>
             <div className={styles.Donate}>
-                <img src={Group18} alt="" />
-                <span>{authUserT.donate}</span>
+                {authUserT.donate === "НЕТ ПРИВЕЛЕГИИ" ? <img src={Group18} alt="" /> : null}
+                <div className={styles.goodDon}>
+                    <span>{authUserT.donate}</span>
+                    <span>{authUserT.dateDonate}</span>
+                </div>
             </div>
             <NavLink exact to="/donate">Преобрести привелегию</NavLink>
             <button>

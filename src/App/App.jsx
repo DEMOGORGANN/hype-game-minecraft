@@ -55,7 +55,7 @@ function App() {
             <SupportTS />
           </Route>
           <Route exact path="/donate">
-            <ShopDonate auth={auth} />
+            <ShopDonate auth={auth} authUserT={authUserT} setAuthUser={setAuthUser} />
           </Route>
 
           {

@@ -41,15 +41,29 @@
         align-items: center;
         justify-content: center;
         background: rgba(81, 188, 64, 0.15);
-        padding: 15px 64px 15px 26px;
+        padding: 15px 0px 15px 0px;
         border-radius: 10px;
-        span {
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #51bc40;
+        width: 100%;
+        .goodDon {
             margin-left: 9px;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #51bc40;
+                margin-bottom: 5px;
+            }
+            span:last-child {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+                color: rgba(81, 188, 64, 0.5);
+                margin: 0;
+            }
         }
     }
     a {

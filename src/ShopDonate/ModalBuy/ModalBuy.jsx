@@ -5,8 +5,9 @@ import { useState } from "react/cjs/react.development";
 
 import styles from './ModalBuy.module.css'
 
-export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
+export default function ModalBuy({ visible, setVisible, modalinfo, auth, authUserT, setAuthUser }) {
     const [prises, setPrises] = useState(1)
+    const [dateDonate, setDate] = useState({ day: 0, mount: 0, year: 0, fullTime: "" })
 
     useEffect(() => {
         document.querySelector("body").style.overflow = visible ? "hidden" : "auto";
@@ -17,11 +18,55 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
     }, [visible])
 
 
+    function buyDonate(e) {
+        e.preventDefault()
+        if (authUserT.money > Math.floor(modalinfo.price * prises)) {
+            setVisible(false)
+            getAndSetDate(dateDonate)
+        }
+    }
+    function getAndSetDate({ day, mount, year, fullTime }) {
+        if (fullTime === "Навсегда") {
+            const time = "Навсегда"
+            const bufUsr = {
+                name: authUserT.name,
+                password: authUserT.password,
+                money: authUserT.money - Math.floor(modalinfo.price * prises),
+                donate: modalinfo.name,
+                dateDonate: time
+            }
+            setAuthUser(bufUsr)
+        } else {
+            let time = new Date()
+            let dd = Number(String(time.getDate()).padStart(2, '0')) + day;
+            let mm = Number(String(time.getMonth() + 1).padStart(2, '0')) + mount;
+            var yyyy = time.getFullYear() + year;
+            if (dd > 31) {
+                mm++
+                dd = dd - 31
+            }
+            if (mm > 12) {
+                yyyy++
+                mm = mm - 12
+            }
+
+            time = dd + '.' + mm + '.' + yyyy;
+            const bufUsr = {
+                name: authUserT.name,
+                password: authUserT.password,
+                money: authUserT.money - Math.floor(modalinfo.price * prises),
+                donate: modalinfo.name,
+                dateDonate: time
+            }
+            setAuthUser(bufUsr)
+        }
+
+    }
+
+
 
     if (visible === false) {
         return null;
-
-
     } else {
         return (
             <div className={styles.modal} onClick={() => setVisible(false)}>
@@ -54,27 +99,69 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
                         <div className={styles.wrapInputBut}>
                             <form>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(1)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(1)
+                                            setDate({ day: 14, mount: 0, year: 0, fullTime: "" })
+                                        }}
+                                    />
                                     <label>14 дней</label>
                                 </div>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(1.3)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(1.3)
+                                            setDate({ day: 0, mount: 1, year: 0, fullTime: "" })
+                                        }}
+                                    />
                                     <label>1 месяц</label>
                                 </div>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(1.5)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(1.5)
+                                            setDate({ day: 0, mount: 3, year: 0, fullTime: "" })
+                                        }}
+                                    />
                                     <label>3 месяца</label>
                                 </div>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(1.8)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(1.8)
+                                            setDate({ day: 0, mount: 6, year: 0, fullTime: "" })
+                                        }}
+                                    />
                                     <label>6 месяцев</label>
                                 </div>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(2)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(2)
+                                            setDate({ day: 0, mount: 0, year: 1, fullTime: "" })
+                                        }}
+                                    />
                                     <label>Год</label>
                                 </div>
                                 <div className={styles.wrapOneInput}>
-                                    <input type="radio" name="timeDonate" onClick={() => setPrises(2.5)} />
+                                    <input
+                                        type="radio"
+                                        name="timeDonate"
+                                        onClick={() => {
+                                            setPrises(2.5)
+                                            setDate({ day: 0, mount: 0, year: 0, fullTime: "Навсегда" })
+                                        }}
+                                    />
                                     <label>Навсегда</label>
                                 </div>
                             </form>
@@ -82,7 +169,7 @@ export default function ModalBuy({ visible, setVisible, modalinfo, auth }) {
                         </div>
                     </div>
                     {auth === true ?
-                        <button>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button> :
+                        <button onClick={(e) => buyDonate(e)}>приобрести за  ₽{Math.floor(modalinfo.price * prises)}</button> :
                         <NavLink to="/myOffice">Войти</NavLink>}
 
                 </div>
