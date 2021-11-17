@@ -31,7 +31,7 @@ export default function Modal({ visible, setVisible, setAuth, auth, setAuthUser 
             if (i.name === valueLogin && i.password === valuePassword) {
                 setAuth(true)
                 setVisible(false)
-                setAuthUser(i)
+                setAuthUser(i);
             }
             else {
                 setInfo(false)
