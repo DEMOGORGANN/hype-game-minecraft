@@ -11,6 +11,7 @@ import bitcoin from './../../IMG/Group29.png'
 import Steam from './../../IMG/MaskGroupasdsa.png'
 import Visaa from './../../IMG/Visaa.png'
 import MstrCard from './../../IMG/MstrCard.png'
+import Logoqiwirgb1 from './../../IMG/Logo_qiwi_rgb1.png'
 
 export default function ModalWAddBalancemodule({ visibleModBuy, setVisibleModBuy }) {
 
@@ -65,6 +66,11 @@ export default function ModalWAddBalancemodule({ visibleModBuy, setVisibleModBuy
                     onClick={() => setButInBuyCoom("MstrCard")}>
                     <img src={MstrCard} alt="" />
                 </div>
+                <div
+                    className={`${styles.Logoqiwirgb1} ${butInBuyCoom === "Logoqiwirgb1" ? styles.activBTS : null}`}
+                    onClick={() => setButInBuyCoom("Logoqiwirgb1")}>
+                    <img src={Logoqiwirgb1} alt="" />
+                </div>
             </div>
         )
     }
@@ -98,7 +104,7 @@ export default function ModalWAddBalancemodule({ visibleModBuy, setVisibleModBuy
                         </button>
                     </div>
                     {activBut === "UNITPAY" ? <UpitPay /> : <FreeKasse />}
-                    <button>пополнить баланс</button>
+                    <button onClick={() => setVisibleModBuy(false)}>пополнить баланс</button>
                 </div>
             </div>
         )
